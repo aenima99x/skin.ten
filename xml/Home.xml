@@ -1,10 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol always="true">10</defaultcontrol>
-	<backgroundcolor>background</backgroundcolor>
-	<menucontrol>6666</menucontrol>
-	<onload>
-	</onload>
+	<defaultcontrol always="true">1</defaultcontrol>
+	<backgroundcolor>0xff00ff00</backgroundcolor>
 	<controls>
+		    <control type="fixedlist" id="50">
+          <description>My first fixed list container</description>
+          <left>80</left>
+          <top>60</top>
+          <width>250</width>
+          <height>200</height>
+          <visible>true</visible>
+          <onup>2</onup>
+          <ondown>3</ondown>
+          <onleft>1</onleft>
+          <onright>1</onright>
+          <viewtype label="3D list">list</viewtype>
+          <orientation>vertical</orientation>
+          <pagecontrol>25</pagecontrol>
+          <scrolltime tween="sine" easing="out">200</scrolltime>
+          <autoscroll>true</autoscroll>
+          <focusposition>4</focusposition>
+          <movement>6</movement>
+          <itemlayout width="250" height="29">
+                    <control type="image">
+                            <left>5</left>
+                            <top>3</top>
+                            <width>22</width>
+                            <height>22</height>
+                            <info>ListItem.Icon</info>
+                    </control>
+                    <control type="label">
+                            <left>30</left>
+                            <top>3</top>
+                            <width>430</width>
+                            <height>22</height>
+                            <font>font13</font>
+                            <aligny>center</aligny>
+                            <selectedcolor>green</selectedcolor>
+                            <align>left</align>
+                            <info>ListItem.Label</info>
+                    </control>
+                    <control type="label">
+                            <left>475</left>
+                            <top>3</top>
+                            <width>300</width>
+                            <height>22</height>
+                            <font>font13</font>
+                            <aligny>center</aligny>
+                            <selectedcolor>green</selectedcolor>
+                            <textcolor>grey</textcolor>
+                            <align>right</align>
+                            <info>ListItem.Label2</info>
+                    </control>
+          </itemlayout>
+          <focusedlayout height="29" width="250">
+                    <control type="image">
+                            <width>485</width>
+                            <height>29</height>
+                            <left>0</left>
+                            <top>0</top>
+                            <visible>Control.HasFocus(50)</visible>
+                            <texture>list-focus.png</texture>
+                    </control>
+                    <control type="image">
+                            <left>5</left>
+                            <top>3</top>
+                            <width>22</width>
+                            <height>22</height>
+                            <info>ListItem.Icon</info>
+                    </control>
+                    <control type="label">
+                            <left>30</left>
+                            <top>3</top>
+                            <width>430</width>
+                            <height>22</height>
+                            <font>font13</font>
+                            <aligny>center</aligny>
+                            <selectedcolor>green</selectedcolor>
+                            <align>left</align>
+                            <info>ListItem.Label</info>
+                    </control>
+                    <control type="label">
+                            <left>475</left>
+                            <top>3</top>
+                            <width>300</width>
+                            <height>22</height>
+                            <font>font13</font>
+                            <aligny>center</aligny>
+                            <selectedcolor>green</selectedcolor>
+                            <textcolor>grey</textcolor>
+                            <align>right</align>
+                            <info>ListItem.Label2</info>
+                    </control>
+          </focusedlayout>
+    </control>
 	</controls>
 </window>
